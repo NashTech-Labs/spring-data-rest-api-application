@@ -50,5 +50,6 @@ public class UserController {
     public User load(@RequestBody final User users) {
         userRepository.save(users);
         return userRepository.findByName(users.getName());
+
     }
 }
